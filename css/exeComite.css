@@ -71,8 +71,8 @@
 .home-content {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 85px;
+    position: relative;
+    /* top: 85px; */
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -81,15 +81,11 @@
 }
 
 .content {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
     position: absolute;
-    top: 85px;
-    left: 0;
-    padding: 15px;
+    padding: 30px 150px;
     width: 100%;
-    height: 280%;
+    /* min-height: 100%; */
+    height: auto;
     background: linear-gradient(135deg, #4a4ddf, #0d0852);
 }
 
@@ -107,12 +103,10 @@ img {
 .leaders {
     max-width: 100vw;
     min-height: auto;
-    position: absolute;
-    top: 250px;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 15px 150px;
 }
 
 figcaption {
@@ -151,12 +145,14 @@ figure img:hover {
 
 .adminstration {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .members {
-    position: absolute;
-    bottom: 25px;
+    position: relative;
+    bottom: 12px;
+    top: 15px;
     display: flex;
     justify-content: center;
     border: 0;
