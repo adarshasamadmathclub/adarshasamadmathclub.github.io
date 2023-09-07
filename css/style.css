@@ -1,28 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nunito&display=swap');
 
-*{
-font-family: 'Montserrat Alternates', sans-serif;
-    font-family: 'Nunito', sans-serif;
+/* Default styles for all devices */
+body {
+    font-family: 'Nunito', sans-serif; /* Set the font family to Nunito */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
-        .top-menu nav a:hover {
-            background-color: #f0f0f0;
-        }
 
-        /* Media query for screens with a max-width of 1024px (adjust as needed) */
-        @media (max-width: 1024px) {
-            .top-menu i {
-                display: inline-flex; /* Display the menu icon for mobile and tablet screens */
-            }
+/* Default styles for larger screens */
+.hero-area {
+    height: 100px; /* Adjust the height as needed */
+    display: flex; /* Add flex display for proper alignment */
+    align-items: center; /* Center vertically */
+    background-color: #333; /* Change background color */
+}
 
-            .top-menu nav {
-                display: none;
-                position: absolute;
-                top: 50px;
-                right: 17px;
-                width: 150px; /* Adjust the width as needed */
-            }
+.site-logo {
+    width: 61px;
+    margin-left: 2rem;
+}
 
-            .top-menu.active nav {
-                display: block; /* Show the navigation menu when the menu icon is clicked */
-            }
-        }
+.top-menu {
+    display: none; /* Hide the menu by default */
+    cursor: pointer; /* Add cursor pointer for interactivity */
+    margin-left: auto; /* Push menu to the right */
+}
+
+.top-menu nav {
+    display: flex; /* Display menu items horizontally */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.top-menu nav a {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px; /* Set a default font size for links */
+    text-decoration: none; /* Remove underlines from links */
+    transition: background-color 0.3s; /* Add smooth hover transition */
+}
+
+.top-menu nav a:hover {
+    background-color: #f0f0f0;
+}
