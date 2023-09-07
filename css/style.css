@@ -1,4 +1,7 @@
-
+*{
+font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
         .top-menu nav a:hover {
             background-color: #f0f0f0;
         }
