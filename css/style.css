@@ -82,3 +82,48 @@
 .bannerimg {
     height: 225px;
 }
+
+@media (max-width: 952px) {
+    .hero-area {
+        height: 69px;
+    }
+
+    .site-logo {
+        width: 61px;
+        margin-left: 2rem;
+    }
+
+    .top-menu i {
+        display: inline-flex;
+    }
+
+    .top-menu nav {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 17px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-menu.nav.active {
+        display: block;
+    }
+
+    .top-menu nav a {
+        display: block;
+        padding: 10px;
+        background-color: transparent;
+        color: #333;
+    }
+
+    .top-menu nav a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .top-menu i:active,
+    .top-menu i:active + .top-menu nav {
+        display: inline-block;
+    }
+}
