@@ -35,6 +35,17 @@
             <img src="./img/logo.webp" alt="img" class="bannerimg">
         </main>
     </div>
+    <script>
+					// Function to toggle the mobile menu
+function toggleMobileMenu() {
+    const nav = document.querySelector('.top-menu nav');
+    nav.classList.toggle('active');
+}
+
+// Add a click event listener to the hamburger icon
+const hamburgerIcon = document.querySelector('.top-menu i');
+hamburgerIcon.addEventListener('click', toggleMobileMenu);
+    </script>
     
 </body>
 </html>
