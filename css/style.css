@@ -28,7 +28,6 @@ body {
 
 .top-menu nav {
     display: flex; /* Display menu items horizontally */
-    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -37,7 +36,7 @@ body {
 .top-menu nav a {
     display: block;
     padding: 10px;
-    background-color: transparent;
+    background-color: #336fc9;
     color: #333;
     font-size: 16px; /* Set a default font size for links */
     text-decoration: none; /* Remove underlines from links */
